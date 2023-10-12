@@ -9,15 +9,13 @@ const assetDirectory = path.resolve(__dirname, 'node_modules/@arcgis/core/assets
 const destinationAssetDirectory = path.resolve(__dirname, `dist/assets`);
 fs.cpSync(assetDirectory, destinationAssetDirectory, {recursive: true});
 
-//
+//Files to be bundled
 const jsFilenames = ['mapView'];
 const cssFilenames = ['esri'];
 const entries = {};
-
 for (const filename of jsFilenames) {
   entries[filename] = path.resolve(__dirname, `src/${filename}.js`);
 }
-
 for (const filename of cssFilenames) {
   entries[filename] = path.resolve(__dirname, `src/${filename}.css`);
 }
