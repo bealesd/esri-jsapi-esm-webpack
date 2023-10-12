@@ -4,7 +4,7 @@ import MapView from "@arcgis/core/views/MapView";
 import WebMap from "@arcgis/core/WebMap";
 
 import esriConfig from "@arcgis/core/config.js";
-esriConfig.assetsPath = "../dist/assets";
+esriConfig.assetsPath = "./dist/assets";
 
 const webmap = new WebMap({
   portalItem: {
