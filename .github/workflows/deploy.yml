@@ -2,9 +2,9 @@ name: Build and Deploy Github Pages Files
 
 on:
   push:
-    branches: [ main ]
+    branches: [ github-pages ]
   pull_request:
-    branches: [ main ]
+    branches: [ github-pages ]
 
 jobs:
   build:
