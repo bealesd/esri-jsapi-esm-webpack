@@ -18,9 +18,9 @@ This repo demontrates how to build the [ArcGIS Maps SDK for JavaScript ES module
 2. ```npx webpack``` or ```npm run build``` - bundled files in [./dist](./dist/)
 
 ### Running Site
-1. Reference bundled files in [./dist_](./dist/) in [./index.html](./index.html)  
+1. Reference bundled files in [./dist_](./dist/) in [./src/index.html](./src/index.html)  
 2. Reference copied [assets](./dist/assets/) esriConfig.assetsPath = "./assets";
-2. Use vscode liveserver to serve [./index.html](./index.html) or ```npm run serve``` (currently not serving static files correctly)
+2. Use vscode liveserver to serve [./src/index.html](./src/index.html) or ```npm run serve``` (currently not serving static files correctly)
 
 ### Refernces
 - [Build with ES modules - ESRI](https://developers.arcgis.com/javascript/latest/es-modules/)
